@@ -1,8 +1,6 @@
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
-import Modal from "react-bootstrap/Modal";
-import Button from "react-bootstrap/esm/Button";
 import { useNavigate } from "react-router-dom";
 import { Card } from "react-bootstrap";
 import "./comps.css";
@@ -10,7 +8,7 @@ import LowerBar from "./lowerBar";
 
 const { useEffect, useState } = require("react");
 
-function Cart() {
+function CartEng() {
   const [comidas, setComidas] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -39,7 +37,7 @@ function Cart() {
   return (
     <Container>
       <LowerBar
-        title="Carrito"
+        title="Cart"
         img={"https://www.svgrepo.com/show/80543/shopping-cart-outline.svg"}
       ></LowerBar>
       <Row>
@@ -60,4 +58,4 @@ function Cart() {
   );
 }
 
-export default Cart;
+export default CartEng;

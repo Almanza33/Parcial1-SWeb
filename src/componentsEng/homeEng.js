@@ -9,7 +9,7 @@ import "./comps.css";
 
 const { useEffect, useState } = require("react");
 
-function Home() {
+function HomeEng() {
   const navigate = useNavigate();
   return (
     <div className="home-container">
@@ -17,7 +17,7 @@ function Home() {
         <Row>
           <Col>
             <div
-              onClick={() => navigate("/menu")}
+              onClick={() => navigate("/menuEng")}
               style={{ cursor: "pointer" }}
             >
               <img
@@ -25,12 +25,12 @@ function Home() {
                 className="menu-img"
                 alt="logo"
               />
-              <h2>Menú</h2>
+              <h2>Menu</h2>
             </div>
           </Col>
           <Col>
             <div
-              onClick={() => navigate("/store")}
+              onClick={() => navigate("/storeEng")}
               style={{ cursor: "pointer" }}
             >
               <img
@@ -38,12 +38,12 @@ function Home() {
                 className="menu-img"
                 alt="logo"
               />
-              <h2>Tiendas</h2>
+              <h2>Stores</h2>
             </div>
           </Col>
           <Col>
             <div
-              onClick={() => navigate("/cart")}
+              onClick={() => navigate("/cartEng")}
               style={{ cursor: "pointer" }}
             >
               <img
@@ -51,7 +51,7 @@ function Home() {
                 className="menu-img"
                 alt="logo"
               />
-              <h2>Carrito</h2>
+              <h2>Cart</h2>
             </div>
           </Col>
         </Row>
@@ -60,4 +60,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default HomeEng;

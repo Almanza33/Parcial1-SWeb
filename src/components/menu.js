@@ -39,7 +39,7 @@ function Menu() {
   return (
     <Container>
       <LowerBar
-        title="menu"
+        title="Menú"
         img={
           "https://cdn1.iconfinder.com/data/icons/heroicons-ui/24/shopping-bag-512.png"
         }

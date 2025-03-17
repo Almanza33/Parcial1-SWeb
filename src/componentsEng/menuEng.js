@@ -10,7 +10,7 @@ import LowerBar from "./lowerBar";
 
 const { useEffect, useState } = require("react");
 
-function Cart() {
+function MenuEng() {
   const [comidas, setComidas] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -39,8 +39,10 @@ function Cart() {
   return (
     <Container>
       <LowerBar
-        title="Carrito"
-        img={"https://www.svgrepo.com/show/80543/shopping-cart-outline.svg"}
+        title="menu"
+        img={
+          "https://cdn1.iconfinder.com/data/icons/heroicons-ui/24/shopping-bag-512.png"
+        }
       ></LowerBar>
       <Row>
         {comidas.slice(0, 4).map((comida, index) => (
@@ -60,4 +62,4 @@ function Cart() {
   );
 }
 
-export default Cart;
+export default MenuEng;

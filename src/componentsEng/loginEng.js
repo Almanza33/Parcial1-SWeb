@@ -7,7 +7,7 @@ import Col from "react-bootstrap/Col";
 import "./comps.css";
 import { Container } from "react-bootstrap";
 
-function Login() {
+function LoginEng() {
   // Estado inicial del Forms
   const [formValues, setFormValues] = useState({
     email: "",
@@ -56,7 +56,7 @@ function Login() {
     <Container>
       <Row>
         <Col style={{ backgroundColor: "beige" }}>
-          <h1>Buenísimo para llevar!</h1>
+          <h1>Too good to go!</h1>
           <img
             src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             className="img1"
@@ -81,19 +81,19 @@ function Login() {
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                   <Form.Control
                     type="password"
-                    placeholder="Contraseña"
+                    placeholder="Password"
                     onChange={handlePasswordChange}
                     value={formValues.password}
                   />
-                  <p>Olvidaste tu Contraseña?</p>
+                  <p>forgot Password?</p>
                   {!validationStates.passwordState && (
                     <Form.Text className="text-muted text-login">
-                      Tu Contraseña debe tener entre 6 y 8 caracteres.
+                      Your password should be between 6 and 8 chars long
                     </Form.Text>
                   )}
                 </Form.Group>
                 <Button variant="primary" onClick={clickSubmit}>
-                  Iniciar Sesión
+                  login
                 </Button>
               </Form>
             </Card.Body>
@@ -104,4 +104,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default LoginEng;

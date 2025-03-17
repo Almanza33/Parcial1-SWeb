@@ -39,7 +39,7 @@ function Store() {
   return (
     <Container>
       <LowerBar
-        title="Store"
+        title="Tienda"
         img={"https://www.svgrepo.com/show/116417/store.svg"}
       ></LowerBar>
       <Row>
